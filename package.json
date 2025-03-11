@@ -1,0 +1,21 @@
+{
+  "name": "oceans-edge",
+  "version": "1.0.0",
+  "description": "A mockup web page for an Ocean's Edge Resort implementing 3rd Party JS Libraries.",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDIR=\"dist\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "travel",
+    "resort",
+    "javascript",
+    "libraries"
+  ],
+  "author": "Keilly Ruth Panis",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
