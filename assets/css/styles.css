@@ -145,6 +145,8 @@ button {
 
 #about {
     /* height: 600px; */
+    width: 100%;
+    display: flex;
     background-image: url('/assets/img/starfish.jpeg');
     background-position: center center;
     background-size: cover;
@@ -187,12 +189,6 @@ button {
     flex-direction: column;
     height: 100%;
     width: 100%;
-}
-
-.col {
-    /* width: 50%; */
-    height: 50%;
-    /* padding: 60px 25px; */
 }
 
 .col img {
@@ -327,5 +323,20 @@ button {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    .glide__slides img {
+        height: 450px;
+        object-fit: cover;
+        margin-bottom: 5px;
+    }
+    .ze-lightbox img {
+        width: 99%;
+        height: 300px;
+        object-fit: cover;
+    }
+    #about,
+    #accommodations,
+    #gallery {
+        padding: 60px 240px;
     }
 }
