@@ -1,18 +1,3 @@
-/* Fonts */
-/* .inter-<uniquifier> {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-}
-    
-.roboto-condensed-<uniquifier> {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}*/
-
 /* General */
 * {
     padding: 0;
@@ -79,15 +64,7 @@ button {
     padding: 10px 30px;
 }
 
-/* Custom Classes */
-/* .nav {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-} */
-
-#banner {
+/* Custom Classes */#banner {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -184,18 +161,6 @@ button {
     transition-duration: 400ms;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-.col img {
-    height: 100%;
-    width: auto;
-}
-
 .center-content {
     display: flex;
     flex-direction: column;
@@ -210,13 +175,6 @@ button {
 .italic {
     font-style: italic;
 }
-
-/* .intro-img {
-    background-image: url('/assets/img/villa-tropicana.jpeg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 .mb-25 {
     margin-bottom: 25px;
@@ -324,16 +282,19 @@ button {
         align-items: center;
         text-align: center;
     }
+
     .glide__slides img {
         height: 450px;
         object-fit: cover;
         margin-bottom: 5px;
     }
+
     .ze-lightbox img {
         width: 99%;
         height: 300px;
         object-fit: cover;
     }
+
     #about,
     #accommodations,
     #gallery {
