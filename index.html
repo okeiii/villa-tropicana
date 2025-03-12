@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.34/dist/fullpage.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css"/>
 </head>
 <body>
     <!-- Navigation -->
@@ -33,9 +34,10 @@
         </div>
         <!-- Welcome / About -->
         <div id="about" class="section">
-            <div class="center-content">
+            <div class="center-content mobile">
                 <h2>Welcome to Villa Tropicana</h2>
-                <p>Nestled in the heart of paradise, Villa Tropicana is your ultimate getaway. Whether you're looking for a peaceful retreat or an exciting adventure, our luxurious villa offers an unforgettable experience. Enjoy breathtaking views, world-class amenities, and a touch of tropical charm.</p>
+                <p class="mb-25">Nestled in the heart of paradise, Villa Tropicana is your ultimate getaway. Whether you're looking for a peaceful retreat or an exciting adventure, our luxurious villa offers an unforgettable experience. Enjoy breathtaking views, world-class amenities, and a touch of tropical charm.</p>
+                <a href="#"><button class="read-more">Read More</button></a>
             </div>
         </div>
         <!-- Accommmodations -->
@@ -71,15 +73,42 @@
         <div id="gallery" class="section">
             <div class="center-content">
                 <h2>Gallery</h2>
-                <p>From the lush gardens to the infinity pool overlooking the ocean, every corner of the villa is designed to make your stay unforgettable. Located just minutes from pristine beaches and local attractions, our villa offers the perfect balance of seclusion and accessibility.</p>     
+                <p class="mb-25">From the lush gardens to the infinity pool overlooking the ocean, every corner of the villa is designed to make your stay unforgettable. Located just minutes from pristine beaches and local attractions, our villa offers the perfect balance of seclusion and accessibility.</p>     
+            </div>
+            <div class="ze-lightbox">
+                <div class="lightbox-row">
+                    <a href="/assets/img/cove.jpeg" data-lightbox="Beach Cove">
+                        <img src="/assets/img/cove.jpeg" alt="Beach coves near resort"/>
+                    </a>
+                    <a href="/assets/img/villa-tropicana.jpeg" data-lightbox="Villa Tropicana">
+                        <img src="/assets/img/villa-tropicana.jpeg" alt="Villa Tropicana"/>
+                    </a>
+                </div>
+                <div class="lightbox-row">
+                    <a href="/assets/img/spa.jpeg" data-lightbox="Spa Services">
+                        <img src="/assets/img/spa.jpeg" alt="Luxury space services"/>
+                    </a>
+                    <a href="/assets/img/beaches.jpeg" data-lightbox="Beach Destinations">
+                        <img src="/assets/img/beaches.jpeg" alt="Local beach tourist destinations"/>
+                    </a>
+                </div>
+            </div>
+            <div class="center-content">
+                <a href="#"><button class="take-tour">Take a Tour</button></a>
             </div>
         </div>
         <!-- Footer -->
         <div id="footer" class="section">
-            <div class="center-content">
+            <div class="footer center-content">
                 <h2>Book Your Stay</h2>
-                <div id="map">
+                <p class="mb-25">Find us. Book us. Enjoy your stay.</p>
+                <div class="socials">
+                    <img src="/assets/img/email.png" width="50px">
+                    <img src="/assets/img/instagram.png" width="50px">
+                    <img src="/assets/img/youtube.png" width="50px">
                 </div>
+            </div>
+            <div id="map">
             </div>
         </div>
     </div>
@@ -93,5 +122,10 @@
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="/assets/js/leaflet.js"></script>
+    <!-- Lightbox JS -->
+    <script src="/assets/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Ripples JS -->
+    <script src="/assets/js/jquery.ripples-min.js"></script>
+    <script src="/assets/js/ripples.js"></script>
 </body>
 </html>

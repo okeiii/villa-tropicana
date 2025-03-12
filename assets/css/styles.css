@@ -133,7 +133,7 @@ button {
 
 .get-started {
     color: #FFFFFF;
-    background-color: #55883B;
+    background-color: #389C9C;
 }
 
 .get-started:hover {
@@ -145,8 +145,41 @@ button {
 
 #about {
     /* height: 600px; */
-    background-color: #E6F0DC;
+    background-image: url('/assets/img/starfish.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 60px 25px;
+}
+
+#about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1; 
+}
+
+#about h2,
+#about p,
+#about a {
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.read-more {
+    color: #FFFFFF;
+    background-color: #003E55;
+}
+
+.read-more:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition-duration: 400ms;
 }
 
 .row {
@@ -194,14 +227,19 @@ button {
 }
 
 #accommodations {
+    background-color: #001c26;
     padding: 60px 25px;
+}
+
+#accommodations h2,
+#accommodations p {
+    color: #FFFFFF;
 }
 
 .glide__slides img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 10px;
     margin-bottom: 5px;
 }
 
@@ -212,13 +250,13 @@ button {
 
 .glide__arrow {
     color: #FFFFFF;
-    background-color: #55883B;
+    background-color: #389C9C;
     margin: 10px 5px 0 5px;
 }
 
 .glide__arrow:hover {
-    color: #FFFFFF;
-    background-color: #000000;
+    color: #000000;
+    background-color: #FFFFFF;
     cursor: pointer;
     transition-duration: 400ms;
 }
@@ -227,11 +265,67 @@ button {
     padding: 60px 25px;
 }
 
+.ze-lightbox {
+    display: flex;
+}
+
+.ze-lightbox img {
+    width: 98%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.ze-lightbox img:hover {
+    opacity: 0.7;
+    transition-duration: 400ms;
+}
+
+.take-tour {
+    color: #FFFFFF;
+    background-color: #003E55;
+    margin-top: 20px;
+}
+
+.take-tour:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+
 #footer {
+    display: flex;
+    background-color: #001c26;
+}
+
+.footer {
     padding: 60px 25px;
 }
 
+#footer h2,
+#footer p {
+    color: #FFFFFF;
+}
+
+.socials img {
+    margin: 0 5px;
+}
+
+.socials img:hover {
+    scale: 1.1;
+    cursor: pointer;
+    transform: 400ms;
+}
+
 #map {
-    height: 300px;
-    border-radius: 10px;
+    height: 400px;
+}
+
+/* Responsive */
+@media only screen and (min-width: 757px) {
+    #banner {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
